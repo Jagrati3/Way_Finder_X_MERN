@@ -1,0 +1,641 @@
+body{
+  font-family: sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container{
+ flex: 1;
+}
+
+.add-btn{
+  background-color: #e63946 !important;
+  border: none;
+}
+.add-btn:hover{
+  background-color: #f57fa1 !important;
+  color: black !important;
+
+}
+.edit-btn:hover{
+  background-color: #f57fa1 !important;
+  color: black !important;
+
+}
+/* .......................................................... */
+/* navbar styling */
+
+.navbar {
+  background: linear-gradient(90deg, #e63946 60%, #f57fa1 100%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border-bottom: 2px solid #fa526e;
+  padding: 0.4rem 0;
+  height: 4.5rem;
+}
+
+.navbar-brand i {
+  color: #fff;
+  transition: transform 0.3s cubic-bezier(.61,1.33,.37,1.04), color 0.2s;
+  font-size: 2rem;
+}
+.navbar-brand:hover i {
+  transform: scale(1.25) rotate(-8deg);
+  color: #ffd6e0;
+}
+
+.navbar-nav {
+  gap: 0.7rem;
+}
+
+.nav-link {
+  color: #fff !important;
+  background: rgba(255,255,255,0.07);
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0.45rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 500;
+  letter-spacing: .8px;
+  transition: background 0.2s, color 0.2s;
+  position: relative;
+}
+.nav-link.active {
+  background: rgba(250, 82, 110, 0.85);
+  color: #fff !important;
+}
+.nav-link:hover, .nav-link:focus-visible {
+  background: #b71335;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  border: none;
+  background: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' height='32' width='32' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='6' width='32' height='4' rx='2' fill='%23fa526e'/%3E%3Crect y='14' width='32' height='4' rx='2' fill='%23fa526e'/%3E%3Crect y='22' width='32' height='4' rx='2' fill='%23fa526e'/%3E%3C/svg%3E");
+}
+/* ...................................................................*/
+/* Footer code  */
+
+/* ===== Footer Section ===== */
+.footer {
+  background-color: #ffebeb; /* light red background */
+  color: #222;
+  padding: 3rem 2rem 1rem;
+  font-family: "Poppins", sans-serif;
+  margin-top: 3rem;
+  box-shadow: 0 -5px 20px rgba(255, 0, 0, 0.1);
+}
+
+/* Footer container grid */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Footer headings */
+.footer h3,
+.footer h4 {
+  color: #ff0000;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+/* About text */
+.footer .about p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Quick links */
+.footer .links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .links ul li {
+  margin-bottom: 0.6rem;
+}
+
+.footer .links ul li a {
+  color: #222;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer .links ul li a:hover {
+  color: #ff0000;
+  margin-left: 5px;
+}
+
+/* Contact info */
+.footer .contact p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer .contact i {
+  color: #ff0000;
+  margin-right: 8px;
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  color: #fff;
+  background-color: #ff0000;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a:hover {
+  background-color: #fff;
+  color: #ff0000;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+}
+
+/* Bottom bar */
+.footer-bottom {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 0, 0, 0.1);
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-container {
+    text-align: center;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+}
+/* ..................................................................... */
+/*  card styling*/
+/* home page representation  */
+
+/* .card {
+  border: none !important;
+  margin-bottom: 2rem;
+
+} */
+
+/* .card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+} */
+
+/* .card-body{
+  padding: 0 !important;
+} */
+
+/* .card-text p{
+  font-weight: 400;
+} */
+
+/* .listing-link-remove{
+  text-decoration: none;
+} */
+.card {
+  border: 0;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(197, 45, 85, 0.06);
+  transition: box-shadow 0.22s cubic-bezier(.42,1.07,.37,1.02), 
+              background 0.19s cubic-bezier(.31,.64,.52,1.06), 
+              transform 0.18s cubic-bezier(.31,.89,.58,1.19);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card:hover, .card:focus-within {
+  background: #ffe7ef;
+  box-shadow: 0 8px 32px 0 rgba(217, 29, 79, 0.15);
+  transform: translateY(-2px) scale(1.015);
+}
+
+.card-img-top {
+  width: 100% !important;
+  aspect-ratio: 4 / 3; /* Keeps image proportionate and responsive */
+  object-fit: cover !important;
+  min-height: 180px;
+  max-height: 230px;
+  background: #f8f8f8;
+  display: block;
+}
+
+
+.card:hover .card-img-top,
+.card:focus-within .card-img-top {
+  filter: brightness(1.035) saturate(1.07);
+}
+
+.card-body {
+  padding: 1.1rem !important;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+}
+
+.card-text {
+  font-weight: 500;
+  font-size: 1.09rem;
+  color: #b71839;
+  line-height: 1.54;
+  letter-spacing: 0.01em;
+}
+
+.card-text span,
+.card-text .price {
+  color: #a0152e;
+  font-weight: bold;
+  font-size: 1.14em;
+  margin-top: 0.18em;
+  display: block;
+}
+
+.listing-link-remove {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.14s;
+}
+
+.card:hover .listing-link-remove,
+.card:focus-within .listing-link-remove {
+  color: #b71839;
+}
+/* ....................................................................... */
+/* create new listing form code  */
+/* edit listing form */
+.row .col-8 {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 3px 24px rgba(213, 35, 73, 0.07);
+  padding: 2.5rem 2.2rem 2rem 2.2rem;
+  margin-bottom: 2.5rem;
+}
+
+h3 {
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #c02a43;
+  margin-bottom: 1.2rem;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #a82231;
+  margin-bottom: 0.45rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.form-control {
+  border-radius: 0.6rem;
+  border: 1.6px solid #ffd0e3;
+  background: #fff9fb;
+  box-shadow: none;
+  font-size: 1.06rem;
+  padding: 0.7em 1em;
+  transition: border-color 0.2s, box-shadow 0.19s;
+  margin-bottom: 0.2rem;
+}
+
+.form-control:focus {
+  border-color: #fa6386;
+  box-shadow: 0 0 0 3px rgba(250, 99, 134, 0.14);
+  background: #fff7fa;
+}
+
+textarea.form-control {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.valid-feedback, 
+.invalid-feedback {
+  font-size: 0.97rem;
+  font-weight: 500;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* File input style */
+input[type="file"].form-control {
+  padding: 0.3em 0.7em;
+  background: #ffe8ef;
+  border-radius: 0.6rem;
+  font-size: 1.01rem;
+}
+
+/* Row columns for price/country */
+.row .col-md-4, 
+.row .col-md-8 {
+  padding-right: 1rem;
+  padding-left: 0;
+}
+
+.row .col-md-8 {
+  padding-right: 0;
+}
+
+.add-btn,.edit-btn{
+  border-radius: 0.7rem;
+  background: linear-gradient(90deg, #bc2745 70%, #ffa1ba 100%);
+  border: none;
+  font-weight: 600;
+  font-size: 1.14rem;
+  color: #fff;
+  padding: 0.7em 2.2em;
+  letter-spacing: .05em;
+  box-shadow: 0 3px 14px rgba(250, 99, 134, 0.09);
+  transition: background 0.18s, transform 0.16s;
+}
+
+.add-btn :hover,
+.add-btn:focus {
+  background: #a81d36;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+@media (max-width: 760px) {
+  .row .col-8 {
+    padding: 1.1rem 0.6rem 1.2rem 0.6rem;
+    border-radius: 1rem;
+  }
+}
+/* Target image inside the form container */
+.row .col-8 img {
+  max-width: 340px; /* smaller width */
+  height: auto;     /* keep aspect ratio */
+  border-radius: 0.8rem;
+  display: block;
+  margin-bottom: 1.2rem;
+}
+/* .show-img{
+  width: 30vh;
+} */
+/* ........................................... */
+/* <! ye photo pe click karne pe uski details show kar raha hai  */
+.show-img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cardonafterclick {
+  width: 600px; /* adjust this as you like */
+  margin: 20px auto; /* centers the card */
+  border-radius: 10px;
+  background-color: #ffe0e0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+.card-title {
+  font-size: 1.8rem;
+  color: #c00000;
+}
+
+.btn-danger {
+  background-color: #c00000;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #ff3b3b;
+}
+
+.btn-outline-danger:hover {
+  background-color: #ff3b3b;
+  color: white;
+}
+/* ............................................................. */
+/* about me css */
+/* about page styles */
+/* ======================
+   ABOUT PAGE – PREMIUM THEME
+   ====================== */
+   
+.about-section {
+  padding: 40px 0;
+}
+
+/* .about-card {
+  background: #f3b2b2;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  max-width: 1000px;
+  margin: 0 auto 40px;
+} */
+
+.about-card {
+  background: linear-gradient(135deg, #ff6b6b, #ffd6d6);
+  /* red → light pink smooth gradient */
+  
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+  max-width: 1000px;
+  margin: 0 auto 40px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect – smooth, elegant */
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+.about-top {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 4px solid #0d6efd;
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+  flex-shrink: 0;
+}
+
+.about-meta {
+  flex: 1;
+  min-width: 240px;
+}
+
+.about-name {
+  color: #0d6efd;
+  margin: 0 0 6px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.about-role {
+  color: #444;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.about-bio {
+  line-height: 1.6;
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.about-links a {
+  margin-right: 8px;
+  color: #0d6efd;
+  background: rgba(13, 110, 253, 0.08);
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.about-links a:hover {
+  background: #0d6efd;
+  color: #fff;
+}
+
+/* BODY SECTION */
+.about-body {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.about-skills, .about-projects {
+  flex: 1;
+  min-width: 260px;
+}
+
+.about-skills h3, .about-projects h3 {
+  color: #222;
+  margin-bottom: 8px;
+  border-left: 4px solid #0d6efd;
+  padding-left: 10px;
+  font-size: 1.3rem;
+}
+
+.about-skills ul, .about-projects ul {
+  margin: 10px 0 0 18px;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+/* FOOTER BUTTONS */
+.about-footer {
+  margin-top: 25px;
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background: #0d6efd;
+  color: #fff;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #0847b1;
+}
+
+.btn-outline-light {
+  background: #fff;
+  color: #0d6efd;
+  border: 1px solid #0d6efd;
+  transition: 0.3s;
+}
+
+.btn-outline-light:hover {
+  background: #0d6efd;
+  color: #fff;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 576px) {
+  .about-photo {
+    width: 130px;
+    height: 130px;
+  }
+  .about-name {
+    font-size: 1.5rem;
+  }
+  .about-card {
+    padding: 20px;
+  }
+}
+/* .................................................... */
+/* .........REVIEW STYLINGS  */
+.review-card {
+    background-color: #ffe6f2; /* light pink */
+    border-left: 5px solid #ff4da6; /* darker pink accent */
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.text-pink {
+    color: #ff1a75; /* dark pink */
+}
+
+.rating {
+    color: #e6005c; /* deep pink */
+    font-size: 1rem;
+}
+/* ........... */
+.review-card {
+    border-left: 5px solid #ff4da6;
+    border-radius: 12px;
+    background: #fff0f6;
+}
+
+.text-pink {
+    color: #ff1493 !important;
+}

@@ -1,0 +1,50 @@
+<% layout("/layouts/boilerplate") %>
+
+<section class="about-section container mt-4">
+  <div class="about-card">
+    <div class="about-top">
+      <img src="https://as1.ftcdn.net/v2/jpg/06/07/86/62/1000_F_607866223_QjCcT1OHrMA6YOCEDtJeU1dzfyhP5XCc.jpg" alt="<%= name %>" class="about-photo" />
+      <div class="about-meta">
+        <h1 class="about-name"><%= name %></h1>
+        <p class="about-role"><%= role %></p>
+        <p class="about-bio"><%= bio %></p>
+        <div class="about-links">
+          <a href="<%= linkedin %>" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="<%= github %>" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:<%= email %>">Email</a>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="about-body">
+      <div class="about-skills">
+        <h3>Skills</h3>
+        <ul>
+          <% skills.forEach(skill => { %>
+            <li><%= skill %></li>
+          <% }) %>
+        </ul>
+      </div>
+
+      <div class="about-projects">
+        <h3>Selected Projects</h3>
+        <ul>
+          <li>
+            <strong>WanderLust (This project)</strong> — Car shipping & listings app. Built with Node, Express, MongoDB, Multer and Cloudinary.
+          </li>
+          <li>
+            <strong>Portfolio</strong> — Personal portfolio site with responsive UI and project pages.
+          </li>
+          <li><strong>Open-Source Collab</strong> — Contributed fixes to frontend components and created feedback system.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="about-footer">
+      <a class="btn btn-primary" href="/listings">Back to Home</a>
+      <a class="btn btn-outline-light" href="/contact">Contact Me</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,26 @@
+<% layout("/layouts/boilerplate") %>
+<!-- ye vo hi jo home page pe dik raha hia sari images and uske name and price  -->
+<h3>All Listings</h3>
+<!-- <form method="GET" action="/listings/new">
+      <button>Create New Listing</button>
+    </form> -->
+
+<!-- printing all listings cards  with help of for loop -->
+`
+<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+  <% for(let listing of allListings) { %>
+
+    <a href="/listings/<%= listing._id %>" class="listing-link-remove">
+
+  <div class="card col">
+    <img src="<%= listing.image.url %>" class="card-img-top" alt="Image" />
+    <div class="card-body">
+      <p class="card-text">
+        <b><%= listing.title %></b> <br />
+        <%= listing.price.toLocaleString("en-IN") %> /night
+      </p>
+    </div>
+  </div>
+  <% } %>
+</div>
+</a>
