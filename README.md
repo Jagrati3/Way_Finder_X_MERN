@@ -1,135 +1,66 @@
-# Way_Finder_X_MERN
-🌍 (WayfinderX)
+# Way_finder_X 🌍  
+*A Full Stack Web Application*
 
-Way_Finder_X is a travel listings web application where users can
-add places, view details, and leave reviews.
+Way_finder_X is a full-stack web application.  
+It allows users to explore travel listings, view details, create accounts, and manage listings.  
+This project is built to practice real-world backend development using Node.js, Express, MongoDB, and EJS.
 
-This project is built using Node.js, Express, MongoDB, and EJS.
+---
 
-✨ Features
+## 📌 Project Description
 
-📌 View all travel listings
+Way_finder_X is designed to simulate the core features of a hotel / travel listing platform.  
+Users can sign up, log in, browse listings, view detailed pages, and interact with the system securely.
 
-➕ Add a new listing
+The project follows **MVC architecture** and focuses on backend logic, authentication, and database handling.
 
-✏️ Edit existing listings
+---
 
-🗑️ Delete listings
+## ✨ Features
 
-⭐ Add reviews to listings
+### 👤 User Features
+- User Signup & Login
+- Authentication using sessions
+- Secure password handling
+- Error handling with custom messages
 
-❌ Delete reviews
+### 🏠 Listing Features
+- View all listings
+- View single listing details
+- Create new listings
+- Edit existing listings
+- Delete listings
 
-🖼️ Image support for listings
+### 🛡️ Security & Validation
+- Middleware for authentication
+- Custom error handling
+- Schema validation
+- Protected routes
 
-🎨 Clean UI using Bootstrap
+---
 
-🛠️ Tech Stack
-Technology	Used For
-Node.js	Backend runtime
-Express.js	Server & routing
-MongoDB	Database
-Mongoose	MongoDB ODM
-EJS	Templating engine
-Bootstrap	Styling
-Joi	Form validation
-Method-Override	PUT & DELETE requests
-📁 Project Structure
-WanderLust/
-│
-├── models/
-│   ├── listing.js
-│   └── review.js
-│
-├── views/
-│   ├── listings/
-│   │   ├── index.ejs
-│   │   ├── show.ejs
-│   │   ├── new.ejs
-│   │   └── edit.ejs
-│   └── layouts/
-│       └── boilerplate.ejs
-│
-├── public/
-│   └── css/
-│       └── style.css
-│
-├── utils/
-│   ├── ExpressError.js
-│   └── wrapAsync.js
-│
-├── schema.js
-├── app.js
-└── README.md
+## 🛠️ Technologies Used
 
-⚙️ Installation Steps
+### Backend
+- Node.js
+- Express.js
 
-Follow these steps to run the project on your system.
+### Frontend
+- EJS (Embedded JavaScript Templates)
+- HTML5
+- CSS3
+- JavaScript
 
-1️⃣ Clone the repository
-git clone https://github.com/your-username/WanderLust.git
+### Database
+- MongoDB
+- Mongoose
 
-2️⃣ Go inside project folder
-cd WanderLust
+### Tools & Libraries
+- Express-session
+- Passport.js (Authentication)
+- bcrypt
+- Joi (Validation)
+- Git & GitHub
 
-3️⃣ Install dependencies
-npm install
+---
 
-4️⃣ Start MongoDB
-
-Make sure MongoDB is running locally.
-
-mongod
-
-5️⃣ Run the server
-nodemon app.js
-
-
-or
-
-node app.js
-
-🌐 Open in Browser
-http://localhost:8080
-
-🧾 Routes Overview
-Listings
-Method	Route	Description
-GET	/listings	Show all listings
-GET	/listings/new	Create new listing
-POST	/listings	Save listing
-GET	/listings/:id	Show listing details
-GET	/listings/:id/edit	Edit listing
-PUT	/listings/:id	Update listing
-DELETE	/listings/:id	Delete listing
-Reviews
-Method	Route	Description
-POST	/listings/:id/reviews	Add review
-DELETE	/listings/:id/reviews/:reviewId	Delete review
-🧪 Validation
-
-Joi is used for form validation
-
-Errors are handled using a custom ExpressError class
-
-Async errors are managed with wrapAsync
-
-📌 Current Status
-
-✅ Listings CRUD working
-
-✅ Reviews add & delete working
-
-❌ Authentication not added yet (planned)
-
-🚀 Future Improvements
-
-User login & signup
-
-Authorization (only owner can delete)
-
-Image upload with Cloudinary
-
-Ratings average calculation
-
-Better UI animations
